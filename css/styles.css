@@ -172,6 +172,10 @@ img {
   color: #4d5ae5;
 }
 
+.header .logo {
+  padding: 16px 0;
+}
+
 @media only screen and (min-width: 768px) {
   .header .logo {
     padding: 24px 0;
@@ -754,7 +758,13 @@ img {
 }
 
 .cage {
-  padding: 100px 0;
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .cage {
+    padding: 100px 0;
+  }
 }
 
 .cage-container {
@@ -773,7 +783,7 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .cage-container {
-    padding-left: 108px;
+    padding-left: 92px;
   }
 }
 
@@ -791,8 +801,10 @@ img {
   }
 }
 
-.cage-text {
-  width: 264px;
+@media only screen and (min-width: 768px) {
+  .cage-text {
+    width: 264px;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -872,7 +884,13 @@ img {
 
 .cage-subscribe-wrapper {
   display: flex;
-  gap: 24px;
+  gap: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cage-subscribe-wrapper {
+    gap: 24px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -897,6 +915,12 @@ img {
   line-height: 2;
   letter-spacing: 0.04em;
   outline: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .cage-subscribe-form {
+    width: 288px;
+  }
 }
 
 .cage-subscribe-form::placeholder {
@@ -1162,10 +1186,6 @@ img {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
-}
-
-.modal-checkbox:checked + .terms-and-conditions .modal-checkbox-overlay {
-  /* fill: #f4f4fd; */
 }
 
 .terms-and-conditions {
